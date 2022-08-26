@@ -1,0 +1,73 @@
+/* Customize your main colors in :root variables */
+:root {
+  --main-background-color: #343a50;
+  --card-background-color: #51576d;
+  --card-background-lighter-color: #7a7f92;
+  --main-text-color: #f7f6f4;
+  --title-text-color: #3cba8b;
+}
+
+body {
+  background-color: var(--main-background-color);
+  /*background: url('img/background.png');
+  background-size: cover; */
+
+  margin: 0;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size:  16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #303030;
+  color: #FFFFFF;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.curve{
+  border-radius: 2rem;
+}
+a {
+  text-decoration: none;
+}
+
+h2,
+p {
+  color: var(--main-text-color);
+}
+
+h3 {
+  font-weight: normal;
+}
+
+/* Candy Shop styling overrides */
+.css-1wewypr {
+  color: black;
+}
+
+.css-1ago99h {
+  color: black;
+}
+.form{
+  width: 90vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+details{
+  text-align: start;
+  padding: 1rem;
+  margin-bottom: 0.1rem;
+  border-bottom: 1px solid #fff;
+  
+}
+summary{
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+details:nth-child(1){
+  border-top: 1px solid #fff;
+}
