@@ -18,7 +18,7 @@ To start the project in development server `npm start`
 
 ### `Backend`
 
-To install the node modules ### `npm install`
+To install the node modules `npm install`
 To start the project in development server  `npm start`
 
 ### `BlockChain`
