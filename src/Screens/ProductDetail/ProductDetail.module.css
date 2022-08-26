@@ -1,0 +1,130 @@
+
+.ProductDetailContainer{
+    padding: 2rem;
+}
+
+.HeroDesc{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    min-height: 80vh;
+    padding-bottom: 1rem;
+}
+
+.ProductSizeVarients{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+.ProductSizeVarients .SizeOption{
+    width: 40px;
+    aspect-ratio: 1;
+    background-color: var(--tertiary);
+    display: grid;
+    place-items: center;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.ProductDescription{
+    margin-block: 1rem;
+}
+.ProductDescription>p:nth-of-type(1){
+    color: var(--tertiary);
+    font-size: 1rem;
+}
+.ProductDescription>p:nth-of-type(2){
+    font-size: .9rem;
+    line-height: 1.75;
+    word-spacing: 4px;
+}
+
+.ProductHighlights {
+    border-right: 1px solid #aaa;
+}
+.ProductHighlights p{
+    font-size: 1.35rem;
+}
+.ProductSpecification>p{
+font-size: 1.35rem;
+}
+.ProductSpecification ul li{
+    display: flex;
+    gap: 1rem;
+
+}
+
+
+.CheckOutOptions button{
+    padding: .5rem 2rem;
+    font-family: inherit;
+    margin-right: 2rem;
+    font-weight: 600;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 4px;
+}
+
+.CheckOutOptions button:nth-of-type(1) i{
+    color: #ff463f;
+}
+.CheckOutOptions button:nth-of-type(1){
+    border: 3px solid #ff463f;
+
+}
+.CheckOutOptions button:nth-of-type(2){
+    border: 3px solid var(--tertiary);
+    background-color: var(--tertiary);
+    color: var(--primary);
+    transition-duration: 200ms;
+}
+.CheckOutOptions button:nth-of-type(2):hover{
+    background-color: transparent;
+    color: var(--tertiary);
+}
+
+.SmilarProductCard{
+    border:1px solid #222
+}
+.SmilarProductCard img{
+    width: 100%;
+}
+
+.SmilarProductCard p{
+    padding: .25rem;
+}
+
+.gallary{
+    display: flex;
+    gap: 1rem;
+}
+.gallary .Selector{
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.gallary .ActiveImg{
+    flex-basis: 80%;
+    background-color: #ccc;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 5px #aaa;
+    cursor: zoom-in;
+}
+
+.gallary .Selector > *{
+    width: 100%;
+    aspect-ratio: 1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #aaa;
+}

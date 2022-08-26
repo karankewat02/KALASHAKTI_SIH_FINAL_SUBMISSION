@@ -1,0 +1,95 @@
+.navbar{
+    /* margin-top: -40px; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 2rem;
+    border-bottom: 1px solid #ccc;
+}
+.navbar img{
+    width: 5rem;
+    user-select: none   ;
+}
+
+.navbar>ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar ul li{
+    margin: 0 .5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+
+.navbar>.buttons{
+    display: flex;
+    align-items: center;
+}
+.navbar>.buttons>*{
+    margin: 0 1rem;
+    cursor: pointer;
+}
+.navbar>.buttons i{
+    font-size: 1.5em;
+    color: var(--tertiary);
+}
+.navbar>.buttons>div>span{
+    font-size: 1.5rem;
+    color: var(--tertiary);
+}
+.navbar.buttons>div{
+    position: relative;
+}
+.navbar .userOptions{
+    position: absolute;
+    margin-top: 1rem;
+    padding:0 1rem;
+    box-shadow: 0 2px 5px #ccc;
+    z-index: 5;
+    background-color: var(--primary);
+}
+.navbar .userOptions li{
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+    padding:.5rem 0;
+}
+
+.CategorySubMenu{
+    position: relative;
+}
+ul li ul {
+	background: transparent;
+	visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+	position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    display: none;
+    z-index: 100;
+}
+
+.CategorySubMenu:hover > ul,
+.CategorySubMenu ul:hover {
+    padding-top:3rem ;
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.CategorySubMenu ul li {
+    background-color: var(--primary);
+    box-shadow: 2px 2px 4px #ccc;
+    border-bottom: 1px solid #ddd;
+    padding:0.5rem 1rem;
+	clear: both;
+    width: 100%;
+    min-width: 15rem;
+}

@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+  scroll-behavior: smooth;
+
+  --primary: #ffeed1;
+  --secondary: #0B0B0B;
+  --tertiary: #800000;
+
+  --font:'Poppins', sans-serif;
+
+  --body-fs:1em;
+  --heading-fs:1.5em;
+  --hero-fs:2.5em;
+
+}
+
+*{
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--primary);
+  font-family: var(--font);
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+ul{
+  list-style: none;
+}
+
+
+.pageorder{
+  overflow-x: hidden;
+}
+.sidebar{
+  width: 20vw;
+  height: 80vh;
+  background-color: #1a1c1e;
+  padding: 1rem;
+  margin-right: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 15px 35px rgb(0 0 0 / 20%);
+  display: flex;
+  flex-direction: column;
+ justify-content: space-between;
+}
+.admintitle{
+  color: whitesmoke;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 1rem;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+}
+.elements{
+  padding: 0.5rem;
+  padding: 0.7rem;
+  border-radius: 1rem;
+  margin: 0.4rem;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 35px rgb(0 0 0 / 20%);
+  
+}
+.elements:hover{
+  border: 1px solid white;
+}
+.datasection{
+  width: 70vw;
+  min-height: 80vh;
+  background-color: rgb(0, 0, 0);
+  padding: 1rem;
+  box-shadow: 0 15px 35px rgb(0 0 0 / 20%);
+  border-radius: 2rem;
+}
+.pageorder{
+  width: 100vw;
+  padding: 1rem;
+  background-color: #336bc2;
+  display: flex;
+  flex-direction: row;
+}
+.elements:active{
+  border:1px solid #002328;
+  background-color: #ffffff;
+}
+
+.icon{
+  margin-right: 0.4rem;
+}
+
+
+
+
+.toplist{
+  /* width: inherit; */
+  height: 42PX;
+  
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 35px rgb(0 0 0 / 20%);
+  border-radius: 2rem;
+  /* padding: 0.1rem; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ 
+ margin-bottom: 1rem;
+}
+.productlist{
+  min-height: 38px;
+  background-color: #FFF;
+  border-radius: 2rem;
+  padding: 0.1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: black; 
+  /* margin: 0.5rem; */
+}
+.productlist>li{
+  background-color: antiquewhite;
+  padding: 0.4rem;
+  border-radius: 1rem;
+}
+.listbox{
+  background-color: #FFF;
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  box-shadow: 0 15px 35px rgb(0 0 0 / 20%);
+}
+.Approve{
+  padding: 8px 12px;
+  color: #FFF;
+  background-color: green;
+  border-radius: 20px;
+  border: 0px;
+}
+.productimg{
+  width: 100px;
+  height: 100px;
+  border-radius: 1rem;
+}
+
+
+
+
+.databody{
+  padding: 2rem;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* overflow: hidden; */
+  
+}
+.overflow{
+overflow: hidden;
+}
+.boxdata{
+  padding: 2rem;
+  min-height: 60vh;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+
+}
+.boxdata>h3{
+  font-weight: 400;
+}
+.xxxxAdminPage{
+  color: #ffffff;
+}
+.inputadminproduct{
+  display: block;
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid #bfbfbf;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  padding-top: 30px;
+  padding-bottom: 5px;
+  -webkit-appearance: none;
+  /* background: transparent; */
+  outline: none;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+.inputadminproduct::placeholder{
+  color:blue;
+  font-weight: 400;
+}
+.xxxxPRoductbutton{
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #ffff;
+  background-color: blue;
+  border-radius: 2rem;
+}
+.xxxuserflex{
+  display: flex;
+  flex-wrap: wrap;
+}
+.yyyyuserbox{
+  color: #ffff;
+  border: 1px solid white;
+  width: 452px;
+  min-height: 200px;
+  font-size: 12px;
+  padding:1rem;
+  margin: 1rem;
+}

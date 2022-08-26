@@ -1,0 +1,14 @@
+.buttonStyle{
+    background-color: var(--tertiary);
+    color: var(--primary);
+    font-size: .9rem;
+    padding: .5rem 2rem;
+    border-radius: 100vw;
+    box-shadow: 0 2px 5px #aaa;
+    transition-duration: 300ms;
+}
+.buttonStyle:hover{
+    background-color: var(--tertiary);
+    opacity: .9;
+    box-shadow: 0 2px 3px #777;
+}

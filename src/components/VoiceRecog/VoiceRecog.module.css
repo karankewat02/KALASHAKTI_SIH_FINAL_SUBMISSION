@@ -1,0 +1,42 @@
+.VoiceRecogConatiner .VoiceRecogComp{
+    width: 50%;
+    margin: auto;
+    border-radius: 100vw;
+    box-shadow: 2px 2px 7px #aaa;
+    font-size: 1.1em;
+    overflow: hidden;
+    background-color: #fff;
+}
+.VoiceRecogConatiner .VoiceRecogComp input{
+    padding: .5rem 1rem;
+    width: calc(100% - 50px);
+    border: none;
+}
+
+.VoiceRecogConatiner .VoiceRecogComp button{
+    min-width: 50px;
+    aspect-ratio: 1;
+    border: none;
+    background-color: var(--tertiary);
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+.VoiceRecogConatiner .VoiceRecogComp button:focus{
+    box-shadow: 2px 2px 10px var(--tertiary);
+    background-color: var(--primary);
+    color: var(--tertiary);
+}
+.VoiceRecogConatiner .RecognizedData{
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 2px 2px 5px #bbb;
+    border-radius: .3rem;
+    width: 70%;
+    margin: auto;
+    margin-block: 2rem;
+    text-align: left;
+}
+
+.VoiceRecogConatiner .RecognizedData > *{
+    margin-block: 1rem;
+}

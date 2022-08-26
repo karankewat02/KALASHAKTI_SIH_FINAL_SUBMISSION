@@ -1,0 +1,28 @@
+.ConfirmationContainer{
+    text-align: center;
+    padding: 0 20%;
+    margin-block: 2%;
+    min-height: 80vh;
+}
+.ConfirmationContainer video{
+    width: 20vw;
+}
+.ConfirmationContainer p,h2{
+    max-width: 50vw;
+    margin:2rem auto;
+}
+.ConfirmationContainer button{
+    padding: .5rem 2rem;
+    border-radius: 4px;
+    border: 3px solid var(--tertiary);
+    background-color: var(--tertiary);
+    color: var(--primary);
+    font-weight: 500;
+    font-family: inherit;
+    transition-duration: 200ms;
+    cursor: pointer;
+}
+.ConfirmationContainer button:hover{
+    background-color: var(--primary);
+    color: var(--tertiary);
+}

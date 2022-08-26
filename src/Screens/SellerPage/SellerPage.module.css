@@ -1,0 +1,82 @@
+.AdminPage{
+    padding: 2rem;
+}
+.AddProduct{
+    text-align: center;
+    background-color: #eee;
+    width: 80%;
+    margin:2rem auto;
+    padding: 1rem;
+}
+.AddProduct *{
+    width: 100%;
+}
+.AddProduct p{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.AddProduct input{
+    font-family: inherit;
+    padding: .25rem 1rem;
+    margin: .5rem 0;
+}
+.AddProduct textarea{
+    font-family: inherit;
+    padding: .35rem 1rem;
+}
+.AddProduct button{
+    padding: .5rem 2rem;
+    background-color: var(--tertiary);
+    border: 3px solid var(--tertiary);
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.sellerOptions{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    margin-block: 1rem;
+}
+
+.sellerOptions div{
+    background-color: var(--tertiary);
+    width: 100%;
+    text-align: center;
+    padding: .5rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    color: var(--primary);
+    font-weight: 600;
+    transition-duration: 200ms;
+}
+.sellerOptions div:hover{
+    opacity: .8;
+}
+
+.OrderCard{
+    margin-block: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 7px #333;
+}
+.OrderCard div p{
+    margin-block: 1rem;
+}
+.OrderCard div p small{
+    font-weight: 700;
+}
+.OrderCard button{
+    background-color: var(--primary);
+    border: 3px solid var(--tertiary);
+    padding: .5rem 2rem;
+    font-family: inherit;
+    font-weight: 600;
+    margin-top: 1rem;
+    cursor: pointer;
+}

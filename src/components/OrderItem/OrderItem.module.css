@@ -1,0 +1,57 @@
+.OrderItemContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 1rem;
+    padding-block: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+.ProductImg{
+    width: 5rem;
+    aspect-ratio: 1;
+    background-size: cover;
+}
+.OrderItemContainer>div>p{
+    padding-top: 1rem;
+    font-weight: 500;
+}
+
+.UpdateProduct{
+    display: flex;
+}
+.UpdateProduct span{
+    cursor: pointer;
+    color: var(--primary);
+    font-size: 1rem;
+    background-color: var(--tertiary);
+    width: 30px;
+    aspect-ratio: 1;
+    display: block;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-inline: .5rem;
+}
+
+.UpdateProduct input{
+    flex: 0;
+    min-width: 50px;
+    text-align: center;
+}
+
+.OrderItemContainer>button{
+    padding: .25rem;
+    font-size: 1.25rem;
+    min-width: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 3px solid #ff463f;
+    color: #ff463f;
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+
+.OrderItemContainer>button:hover{
+    background-color: #ff463f;
+    color: var(--primary);
+}

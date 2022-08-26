@@ -1,0 +1,13 @@
+.ArtCard{
+    background-color: rgb(255, 204, 145);
+    padding: 2rem 4rem;
+    border-radius: .5rem;
+}
+.ArtCard p{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+.ArtCard img{
+    width: 350px;
+    
+}

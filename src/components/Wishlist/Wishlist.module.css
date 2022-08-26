@@ -1,0 +1,28 @@
+.WishlistContainer{
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    padding: 2rem;
+    background-color: var(--primary);
+    box-shadow: 0 2px 5px #ccc;
+    min-width: 40vw;
+}
+.WishlistContainer>div:first-of-type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.WishlistContainer>div:first-of-type button{
+    width: 30px;
+    aspect-ratio: 1;
+}
+
+.WishlistContainer div:nth-of-type(2) button{
+    border-color:var(--tertiary) ;
+    color: var(--tertiary);
+}
+.WishlistContainer div:nth-of-type(2) button:hover{
+    color: var(--primary);
+    background-color: var(--tertiary);
+}

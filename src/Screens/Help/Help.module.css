@@ -1,0 +1,17 @@
+.helpPage{
+    width: 100vw;
+    min-height: 60vh;
+    text-align: center;
+    padding: 2rem 0;
+}
+.helpPage h2{
+    color: var(--tertiary);
+}
+.HelpVideo{
+    width: 70%;
+    height: auto;
+    margin: auto;
+}
+.HelpVideo iframe{
+    margin-block: 1rem;
+}

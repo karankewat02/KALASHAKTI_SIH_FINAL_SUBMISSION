@@ -1,0 +1,8 @@
+.MapContainer{
+    background-color: var(--primary);
+}
+.MapContainer>div:first-of-type{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    place-items: center;
+}

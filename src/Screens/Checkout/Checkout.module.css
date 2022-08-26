@@ -1,0 +1,55 @@
+.Checkout{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.Checkout .checkoutForm form h2{
+    margin-top: 2rem;
+    font-variant: all-small-caps;
+    font-size: 2.5em;
+}
+.checkoutForm form div{
+    margin-block: 1rem;
+}
+.Checkout .checkoutForm form input{
+    width: 100%;
+    padding: .5rem 1rem;
+}
+
+.PaymentSection{
+    background-color:#343434 ;
+    color: #fff;
+    padding: 2rem;
+}
+.PaymentSection .Products>*{
+    transform: scale(.75);
+}
+.PaymentSection h2{
+    font-variant: all-small-caps;
+    font-size: 2.5em;
+}
+.PaymentSection>div:first-of-type input{
+    margin-right: 1rem;
+    font-family: inherit;
+}
+
+.PaymentSection div:last-of-type{
+    text-align: right;
+}
+/* .PaymentSection div:last-of-type button{
+    padding: .5rem 2rem;
+    border: 3px solid var(--tertiary);
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: var(--tertiary);
+    color: var(--primary);
+    border-radius: 4px;
+    transition-duration: 200ms;
+}
+.PaymentSection div:last-of-type button:hover{
+    background-color: transparent;
+    color: var(--tertiary);
+} */

@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@keyframes rotate-c {
+  0%{transform: rotatez(0deg);}
+  100%{transform: rotatez(360deg);}
+}
+@keyframes rotate-ac {
+  0%{transform: rotatez(360deg);}
+  100%{transform: rotatez(0deg);}
+}
+@keyframes fadeInOut {
+  0%{opacity: 1; transform: scale(1);}
+  50%{opacity: 0;transform: scale(0);}
+  100%{opacity: 1; transform: scale(1);}
+}
+/* *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+} */
+.Homecontent{
+    width: 100vw;
+    height: 90vh;
+    background: rgba(0, 0, 0, 0.5);
+    /* opacity: .5; */
+    
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    overflow: hidden;
+
+
+    background-image: url(./Img/bgc.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.homeBgImgs{
+  position: absolute;
+  inset: 0;
+  background-color: #ffe9c7;
+  z-index: -1;
+  display: flex;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+  overflow: hidden;
+  gap: 1rem;
+}
+
+.fadeInOut{
+  animation-name: fadeInOut;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  /* animation-delay: 1s; */
+}
+.homeBgImgs>img{
+  margin: auto;
+  width: auto;
+  height: auto;
+}
+/* .homeBgImgs>img:nth-of-type(n+1){
+  animation-delay: 2s;
+}
+.homeBgImgs>img:nth-of-type(2n+1){
+  animation-delay: 4s;
+} */
+
+.Homecontent>img{
+  position: absolute;
+  color: var(--decoration-color);
+  opacity: .7;
+  width: 20vw;
+}
+
+.Homecontent>img:nth-of-type(1){
+  top: -15%;
+  left: -7%;
+  animation: rotate-ac 80s linear infinite;
+}
+.Homecontent>img:nth-of-type(2){
+  top: -15%;
+  right: -7%;
+  animation: rotate-c 80s linear infinite;
+}
+.Homecontent>img:nth-of-type(3){
+  bottom: -15%;
+  left: -7%;
+  animation: rotate-ac 80s linear infinite;
+}
+.Homecontent>img:nth-of-type(4){
+  bottom: -15%;
+  right: -7%;
+  animation: rotate-c 80s linear infinite;
+}
+.Homecontent .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.829);
+    border-radius: .5rem;
+    padding:2rem;
+    width: 60%;
+
+}
+.Homecontent .main .Content{
+    height: 30%;
+    /* width: 60%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    font-family: 'Lato';
+}
+.Homecontent .main .Content h2{
+    color: var(--accent-color);
+    font-size: 3rem;
+    font-family: var(--heading-font);
+    font-weight: 600;
+}
+
+.Homecontent .main .Content p{
+    font-size: 1.2rem;
+    color: var(--font-color);
+    font-weight: 500;
+    width: 60%;
+    margin: 1rem 20%;
+}
+
+
+.Homecontent .btnx button{
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border: 0;
+  background-color: var(--accent-color);
+  color: var(--primary);
+  cursor: pointer;
+  margin:0 2rem;
+  border-radius: 100vw;
+  border:3px solid var(--tertiary);
+  transition-duration: 200ms;
+
+}
+.Homecontent .btnx button:nth-of-type(2){
+  border:3px solid var(--tertiary);
+  background-color: transparent;
+  color:#563511;
+  transition-duration: 200ms;
+}
+.Homecontent .btnx button:first-of-type:hover{
+  background-color: var(--primary);
+  color: var(--tertiary);
+}
+
+.Homecontent .btnx button a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  
+  .Homecontent>img{
+    width: 50vw;
+  }
+  .Homecontent>img:nth-of-type(1){
+    top: -10%;
+    left: -15%;
+  }
+  .Homecontent>img:nth-of-type(2){
+    top: -10%;
+    right: -15%;
+  }
+  .Homecontent>img:nth-of-type(3){
+    bottom: -10%;
+    left: -15%;
+  }
+  .Homecontent>img:nth-of-type(4){
+    bottom: -10%;
+    right: -15%;
+  }
+  .Homecontent .main .Content h2{
+    font-size: 2.5rem;
+  }
+  .Homecontent .main .Content p{
+    width: 80%;
+    margin: 1rem 10%;
+    text-align:justify;
+  }
+
+}

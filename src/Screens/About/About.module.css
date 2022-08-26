@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap');
+.about{
+    min-height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.about>div{
+    padding: 2rem;
+}
+.about>div:first-of-type>h1{
+    color: var(--tertiary);
+    margin-block: .5rem;
+    font-size: var(--hero-fs);
+    font-weight: 600;
+}
+.about>div:first-of-type>p:first-of-type{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: var(--heading-fs);
+}
+.about>div:first-of-type>p:nth-of-type(2){
+    margin-block: 1rem;
+}
